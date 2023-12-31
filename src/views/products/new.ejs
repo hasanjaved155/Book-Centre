@@ -1,0 +1,16 @@
+<%-  include("../partials/header") %>
+<%-  include("../partials/navbar-login") %>
+
+<section class="newsletter">
+
+    <form action="/products" method="post">
+      <h3>create new form</h3>
+      <input type="text" name="name" placeholder="enter product name" id="name" class="box">
+      <input type="url" name="imageUrl" placeholder="enter products imageurl" id="imageUrl" class="box">
+      <input type="number" name="price" placeholder="enter product price" id="price" class="box">
+      <input type="submit" value="create" class="btn">
+    </form>
+
+  </section>
+
+<%-  include("../partials/footer") %>
