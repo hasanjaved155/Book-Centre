@@ -2,7 +2,10 @@ const mongoose = require('mongoose');
 
 const connectDataBase = async() => {
     try {
-        await mongoose.connect(process.env.MONGO_DB_URL);
+        // const dbUrl = 'mongodb://127.0.0.1/book-centre';
+        const dbUrl = process.env.MONGO_DB_URL;
+
+        await mongoose.connect(dbUrl);
     }
     catch (e) {
         await mongoose.disconnect();
